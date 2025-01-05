@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="/test draft/media/logo.png">
+        <title>mentors4you</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <header>
+            <div class="header-container">
+                <a target="_self" href="/index.html"><img src="/test draft/media/logo.png" alt="logo" class="logo"> </a>
+                <h1 class="website-name">Mentors4You</h1>
+                
+                <button class="menu-button" onclick = "toggleMenu()">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </button>   
+
+            </div>
+        </header>  
+
+        <div id="menuDialog" class="menu-dialog">
+            <span class="close-btn" onclick="closeMenu()">X</span> <!--TODO FIX THIS-->
+            <ul>
+                <li><button class="profile-btn" onclick="openProfile()">
+                    <img id="profilImage" src="/test draft/media/defaultprofile.png" alt="Profile" class="profile-img">
+                </button></li>
+                <li><a href="/test draft/main.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul> 
+        </div> 
+        
+        <div id="profileModal" class="profile-modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeProfile()">X</span>
+                <h2>Login / Signup</h2>
+
+                <form id="loginForm">
+                    <input type="text" placeholder="Username" required><br>
+                    <input type="password" placeholder="password" required><br>
+                    <button type="submit">Login</button>
+                    <p>Don't have an account? <a href="#">Sign up</a></p>
+                </form>
+            </div>
+        </div>
+
+        <section id="home" class="hero">
+            <div class="container">
+                <h2>Connecting Entrepreneurs with the Best Mentors</h2>
+                <p>Empowering startups with expert guidance and analytics.</p>
+
+    </body>
+
+    <script src="script.js"></script>
+
+</html>
