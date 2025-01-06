@@ -1,63 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="/test draft/media/logo.png">
+        <title>mentors4you</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
 
-  <body>
-    <h1>Mentors4You</h1>
-    <hr />
-    <hr />
-    <a href="defaultprofile.png">
-      <img src="defaultprofile.png" alt="profile_photo" />
-    </a>
-    <p class="username">@white-ange1</p>
-    <p>This is for <strong>learning!</strong></p>
-    <br />
-    <hr />
-    <br />
-    <a href="/index.html" target="_blank">Main</a>
-    <a href="#content">Content</a>
-    <a href="#about">About</a>
-    <a href="mailto:lnegi0001@gmail.com">Mail Us</a>
+    <body>
 
-    <h2 id="content">Content</h2>
-    <p>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus labore
-      optio eveniet, perferendis quis porro. Placeat, veritatis neque. Officia
-      necessitatibus explicabo suscipit illo aperiam dignissimos architecto
-      consequatur ipsa impedit ullam alias tenetur sed sunt molestiae cum
-      sapiente labore iste saepe sequi, facilis placeat omnis dolore cumque!
-      Veritatis, doloribus! Magni sequi ab possimus mollitia quasi eaque dolorem
-      maiores repudiandae eum corrupti cum quibusdam, atque dolor, nulla
-      suscipit itaque, non saepe animi nisi exercitationem nostrum veniam id
-      ratione eligendi! Sunt officiis laborum, ipsum similique ea voluptate
-      tenetur velit voluptatem officia dolore dignissimos alias nulla minima
-      animi modi maiores accusamus fugit tempore quis recusandae quae ex id nam
-      molestiae. Blanditiis veritatis voluptatum iusto nihil impedit rerum atque
-      at placeat earum, aliquid hic, deserunt alias ipsum delectus quia aperiam
-      similique qui eaque nisi porro voluptatem repellat explicabo? Molestias,
-      laborum quia amet eum voluptatibus quibusdam, sapiente aliquam,
-      repudiandae consequatur officia iste doloribus. Consequuntur, mollitia
-      facere.
-    </p>
+        <header>
+            <div class="header-container">
+                <a target="_self" href="/index.html"><img src="/test draft/media/logo.png" alt="logo" class="logo"> </a>
+                <h1 class="website-name">Mentors4You</h1>
+                
+                <button class="menu-button" onclick = "toggleMenu()">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </button>   
 
-    <h2 id="about">About</h2>
-    <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae porro
-      reiciendis sequi corrupti quas vel ut. Nobis praesentium nam aliquid
-      sapiente dolorem alias aliquam quidem dolore aspernatur dicta, non laborum
-      corporis perspiciatis culpa ad nihil quasi impedit ipsum molestias dolorum
-      consequuntur repellendus incidunt. Obcaecati molestias consequuntur
-      veritatis illo? Repudiandae temporibus, architecto numquam, corrupti vel
-      animi itaque, aut tempora dolore accusamus non minus explicabo obcaecati
-      rerum nostrum libero! Quae ipsa minima sit eaque aliquid earum magnam
-      natus pariatur error, perferendis explicabo nostrum suscipit corrupti, a
-      sint voluptate, laborum repudiandae unde. Ex facilis asperiores explicabo,
-      accusamus iste cumque in a quaerat doloremque.
-    </p>
-    <a href="#">Jump to Top</a>
-  </body>
+            </div>
+        </header>  
+
+        <div id="menuDialog" class="menu-dialog">
+            <span class="close-btn" onclick="closeMenu()">X</span> <!--TODO FIX THIS-->
+            <ul>
+                <li><button class="profile-btn" onclick="openProfile()">
+                    <img id="profilImage" src="/test draft/media/defaultprofile.png" alt="Profile" class="profile-img">
+                </button></li>
+                <li><a href="/test draft/main.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul> 
+        </div> 
+        
+        <div id="profileModal" class="profile-modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeProfile()">X</span>
+                <h2>Login / Signup</h2>
+
+                <form id="loginForm">
+                    <input type="text" placeholder="Username" required><br>
+                    <input type="password" placeholder="password" required><br>
+                    <button type="submit">Login</button>
+                    <p>Don't have an account? <a href="#">Sign up</a></p>
+                </form>
+            </div>
+        </div>
+
+        <section id="home" class="hero">
+            <div class="container">
+                <h2>Connecting Entrepreneurs with the Best Mentors</h2>
+                <p>Empowering startups with expert guidance and analytics.</p>
+
+    </body>
+
+    <script src="script.js"></script>
+
 </html>
