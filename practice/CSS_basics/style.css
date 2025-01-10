@@ -26,6 +26,34 @@
     cursor: pointer;
 }
 
+.amazon-add {
+    color: black;
+    background-color: rgb(255, 216, 20);
+    border: none;
+    width: 140px;
+    height: 32px;
+    border-radius: 25px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    align-items: center;
+    cursor: pointer;
+}
+
+.amazon-buy {
+    color: black;
+    background-color: rgb(255, 164, 28);
+    border: none;
+    width: 140px;
+    height: 32px;
+    border-radius: 25px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    align-items: center;
+    cursor: pointer;
+}
+
 .github {
     color: white;
     background-color: rgb(46, 164, 79);
