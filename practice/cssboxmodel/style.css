@@ -1,0 +1,88 @@
+:root {
+    background-color: bisque;
+}
+
+div.pagination .initial {
+    color: black;
+    background-color: white;
+    padding: 8px 12px;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: capitalize;
+    border: 10px black;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+div.pagination button {
+    color: black;
+    background-color: transparent;
+    padding: 8px ;
+    border: none;
+    font-size: 14px;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.stretch button {
+    color: white;
+    background-color: green;
+    font-size: 14px;
+    padding: 8px 16px;
+    font-weight: 500;
+    border: none;
+    margin-bottom: 20px;
+    cursor: pointer;
+    text-transform: capitalize;
+    align-items: center;
+    transition: padding 1.15s, font-size 1.15s;
+}
+
+.stretch button:hover {
+    padding: 16px 32px;
+    font-size: 28px;
+}
+
+.click button {
+    color: white;
+    background-color: green;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 16px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.click button:active {
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.200);
+}
+
+.margin-padding {
+    display: flexbox;
+}
+.margin-padding button {
+    color: white;
+    background-color: green;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 400;
+    border: none;
+    text-transform: capitalize;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: padding 0.15s, margin 0.15s;
+}
+
+.margin-padding button:hover {
+    padding: 8px 26px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
